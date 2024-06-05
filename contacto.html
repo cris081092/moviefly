@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moviefly</title>
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/jpg" href="https://cdn-icons-png.freepik.com/512/2809/2809590.png"/>
+
+</head>
+
+
+<body>
+    <!-- Inicio Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="https://cdn-icons-png.freepik.com/512/2809/2809590.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          Moviefly
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/articulos.html">Articulos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/contacto.html">Contáctanos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Fin de Navbar -->
+
+    <br>
+
+    
+    <div class="container pb-5">
+      <div class="row">
+        <div class="col-sm-12 left-section pb-1">
+          <br>
+          <div class="row row-cols-1 row-cols-md-12 g-12">
+            <form class="row g-12" id="form">
+
+              <div class="col-md-6">
+                  <label for="inputName" class="form-label lato-bold">Nombre</label>
+                  <input type="text" class="form-control" id="inputName" required>
+              </div>
+
+              <div class="col-md-6">
+                  <label for="inputLastName" class="form-label lato-bold">Apellido</label>
+                  <input type="text" class="form-control" id="inputLastName" required>
+              </div>
+
+              <div class="col-12; mt-3">
+                <label for="inputEmail4" class="form-label lato-bold">Correo Eléctronico</label>
+                <input type="email" class="form-control" id="inputEmail4" required>
+              </div>
+
+              <div class="col-md-6; mt-3">
+                <label for="inputCity" class="form-label lato-bold">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity" required>
+              </div>
+              <div class="col-md-6; mt-3">
+                  <label for="inputPais" class="form-label lato-bold">Pais</label>
+                  <input type="text" class="form-control" id="inputPais" required>
+              </div>
+
+              <div class="col-md-12; mt-3">
+                  <label for="inputContact" class="form-label lato-bold">Motivo de contacto</label>
+                  <select class="form-select" id="inputContact" required>
+                      <option selected disabled value="">Seleccione una opción...</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="soporte">Soporte</option>
+                        <option value="comentarios">Comentarios</option>
+                  </select>          
+              </div> 
+
+              <div class="mb-3">
+                <label for="validationTextarea" class="form-label "></label>
+                <textarea class="form-control is-invalid lato-bold" id="validationTextarea" placeholder="Escriba su comentario" required></textarea>
+                <div class="invalid-feedback lato-bold">
+                  Por favor ingresa un mensaje en el área de texto.
+                </div>
+              </div>
+
+              <div class="col-12">
+                  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label lato-bold" for="gridCheck">
+                          Deseo suscribirme a las novedades más recientes.
+                      </label>
+                  </div>
+              </div>
+              <div class="col-12; mt-3"> 
+                  <button type="submit" class="btn btn-primary lato-bold" onclick="alertar('segunda alerta');">
+                    Enviar
+                  </button>                
+              </div>
+              
+           </form>   
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="mt-5">
+      <div class="footer">
+        <div class="row col-12">
+          <ul>
+            <li><a href="contacto.html">Contactanos</a></li>
+            <li><a href="404.html">Politica de privacidad</a></li>
+            <li><a href="404.html">Terminos y condiciones</a></li>
+          </ul>  
+        </div> 
+        
+          <div class="row col-12">
+            <ul>
+              <li><a href="https://www.facebook.com/" target="_blank"><img src="/images/002-facebook.png" alt="facebook ico"></a></li>
+              <li><a href="https://www.instagram.com/" target="_blank"><img src="/images/005-instagram.png" alt="instagram ico"></a></li>
+              <li><a href="https://web.telegram.org/" target="_blank"><img src="/images/003-telegrama.png" alt="telegram ico"></a></li>
+              <li><a href="https://www.x.com/" target="_blank"><img src="/images/001-gorjeo.png" alt="x ico"></a></li>
+            </ul>
+          </div>
+      
+        <div class="row col-12" >
+          <a href="index.html">© 2024 Equipo N° 29 - Todos los derechos reservados || Diseñado por equipo N° 29</a>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    
+    </body>
+    </html>
+    

@@ -1,0 +1,12 @@
+#nosotros {
+  background-color: rgba(5, 5, 5, 0.377);
+  border-radius: 25px;
+}
+
+#nombres {
+  text-align: center;
+}
+
+#AcercaDescripcion {
+  font-size: 17px;
+}

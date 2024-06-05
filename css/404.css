@@ -1,0 +1,88 @@
+/* Add styles here */
+.sidebar {
+    height: 100%;
+    align-content: flex;
+    /* background: lightgreen; */
+  }
+  .left-section {
+    height: 100%;
+    background: lightblue;
+    overflow: auto;
+  }
+
+  .lato-light {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .lato-bold {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .lato-light-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .lato-regular-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .lato-bold-italic {
+    font-family: "Lato", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+
+  .footer{
+    background:#000;
+    padding:5px 0px;
+    font-family: "Lato", sans-serif;
+    text-align:center;
+    position: relative;
+    }
+    
+    .footer .row{
+    width:100%;
+    margin:1% 0%;
+    font-size:0.8em;    
+    }
+    
+    .footer .row a{
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+    }
+     
+    .footer .row ul li{
+    display: inline-block;
+    margin:0px 15px;
+    }
+    
+    .center404{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
+
+    body {
+      background-color: #000;
+    }
+   
+   .botonvolver{
+    display: flex;
+    justify-content: center; 
+   }
+   
